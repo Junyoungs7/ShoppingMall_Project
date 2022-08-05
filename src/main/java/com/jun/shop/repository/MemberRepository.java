@@ -1,4 +1,9 @@
 package com.jun.shop.repository;
 
-public interface MemberRepository {
+import com.jun.shop.entity.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MemberRepository extends JpaRepository<Member, Long> {
+
+    Member findByEmail(String email);
 }
