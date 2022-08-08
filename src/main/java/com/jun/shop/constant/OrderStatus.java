@@ -1,0 +1,5 @@
+package com.jun.shop.constant;
+
+public enum OrderStatus {
+    ORDER, CANCEL
+}

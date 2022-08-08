@@ -21,9 +21,7 @@ public class Member {
 
     @Column(unique = true)
     private String email;
-
     private String password;
-
     private String address;
 
     @Enumerated(EnumType.STRING)
