@@ -29,7 +29,8 @@ public class ItemImgService {
         String imgUrl = "";
 
         if(!StringUtils.isEmpty(oriImgName)){
-            imgName = fileService.uploadFile(itemImgLocation, oriImgName, itemImgFile.getBytes());
+            imgName = fileService.uploadFile(itemImgLocation, oriImgName,
+                    itemImgFile.getBytes());
             imgUrl = "/images/item/" + imgName;
         }
 
